@@ -1,5 +1,5 @@
 import os
-os.environ['RAYLIB_BIN_PATH'] = '.'
+
 MAX_X = 800
 MAX_Y = 600
 FRAME_RATE = 30

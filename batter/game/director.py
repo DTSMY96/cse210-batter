@@ -1,6 +1,6 @@
 from time import sleep
 
-import raylibpy
+import pyray
 from game import constants
 
 class Director:
@@ -38,7 +38,7 @@ class Director:
             #     # Game over
             #     self._keep_playing = False
 
-            if raylibpy.window_should_close():
+            if pyray.window_should_close():
                 self._keep_playing = False
 
 
