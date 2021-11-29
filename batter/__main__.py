@@ -1,4 +1,6 @@
 import random
+from game.constants import BRICK_HEIGHT, BRICK_WIDTH
+from game.brick import brick
 from game import constants
 from game.director import Director
 from game.actor import Actor
@@ -25,6 +27,16 @@ def main():
 
     cast["bricks"] = []
     # TODO: Create bricks here and add them to the list
+    brick1 = brick()
+    brick2 = brick()
+    brick3 = brick()
+    brick1.set_position(Point(10,10))
+    brick2.set_position(Point(100,10))
+    brick3.set_position(Point(200,10))
+    cast["bricks"].append(brick1)
+    cast["bricks"].append(brick2)
+    cast["bricks"].append(brick3)
+
 
     cast["balls"] = []
     # TODO: Create a ball here and add it to the list
